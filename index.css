@@ -101,7 +101,7 @@ body{
 } 
 .inicio_background img {  
   display: flex;
-  width: 90vw;
+  width: 100vw;
   height: auto;
   justify-content: center;
   align-self: center;
