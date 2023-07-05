@@ -124,7 +124,7 @@ body{
 }
 .inicio_productos img { 
   display: flex;
-  width: 90%;
+  width: 100%;
   height: auto;
   justify-content: center;
   align-self: center;
