@@ -79,15 +79,19 @@ body{
 .redes_container a img {
   width: 18px;
   height: 18px;
+  color: var(--gris_opacity);
 }
 .titulo {
   font-size: 30px;  
   text-align: left;
+  font-family: 'Playfair Display', serif;  
 }
 .parrafo {
   font-size: 20px;
   margin: 30px auto;
   text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 /*********************************inicio background*****************************/
 .inicio_background {  
@@ -148,6 +152,8 @@ body{
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 .footer_container img {
   width: 200px;
@@ -155,6 +161,9 @@ body{
 .footer--lista-navegacion li {
   margin: 20px 0;
   text-align: left;
+}
+.footer--lista-navegacion li a:hover {
+  color: white;
 }
 @media (min-width: 1024px) {
 /***********************************HEADER VISTA ESCRITORIO******************************/
