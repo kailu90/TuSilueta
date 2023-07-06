@@ -225,7 +225,7 @@ body{
     flex-direction: row;
     align-items: center;
     position: static;
-    height: 100px;
+    height: 100%;
   }  
   .header--lista-navegacion ul li {
     display: flex;
