@@ -88,7 +88,7 @@ body{
   }
   .slider .slider-track {
     display: flex;
-    animation: scroll 5s linear infinite;
+    animation: scroll 60s linear infinite;
     width: calc(2000px * 12); 
   }
   .slider .slide {
@@ -103,10 +103,10 @@ body{
   }
   @keyframes scroll {
     0% {
-      transform: translateX(0);
+      transform: translateX(0);      
     }  
     100% {
-      transform: translateX(calc(-200px * 6));
+      transform: translateX(calc(-100vw * 6));      
     }
   }
 /***********************************PAGINA INICIO - VISTA MOBILE******************************/
