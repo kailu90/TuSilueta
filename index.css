@@ -22,7 +22,7 @@ body{
 .header_container {
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 100%;  
   height: 100px;
   background-color: white;
   text-align: center;
@@ -31,6 +31,30 @@ body{
   padding: 20px;
   box-shadow: 0px 0.5px gray;
   z-index: 1;  
+}
+.header_container #check {
+  display: none;
+}
+.header_container ul{
+  position: fixed;
+  width: 80%;
+  height: 100vh;
+  background: white;
+  top: 101px;
+  left: -100%;
+  text-align: left;
+  transition: all 0.5s;
+}
+.header--lista-navegacion ul li {
+  display: block;
+  margin: 50px 20px;  
+}
+.header_container li a:hover, li a.active {
+  background: none;
+  color: var(--gris_opacity);
+}
+#check:checked ~ .header--lista-navegacion ul {
+  left: 0;
 }
 .header--menu { 
   width: 30px;
@@ -43,9 +67,6 @@ body{
   height: 100px;
   position: absolute;
   left: calc(50% - 50px);
-}
-.header--lista-navegacion {
-  display: none;  
 }
 .header--lupa {
   width: 30px;
@@ -65,7 +86,7 @@ body{
   align-items: center;
   justify-content: center;
 }
-.redes_container{
+.redes_container {
   position: fixed;
   top: 50%;
   right: 0;
@@ -113,13 +134,17 @@ body{
 .slider-container {
   display: flex;
   width: 100%;
+  max-width: 1000px; 
+  margin: 0 auto;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
 .slider-container img {
   flex: flex;
   width: 100%;
+  justify-content: center;
   scroll-snap-align: center;
+  
 }
 /*********************************inicio productos***************************/
 .inicio_productos p {
@@ -166,29 +191,74 @@ body{
   color: white;
 }
 @media (min-width: 1024px) {
+  .redes_container a img {
+    width: 48px;
+    height: 48px;    
+  }
 /***********************************HEADER VISTA ESCRITORIO******************************/
-  .header_container {
-    padding: 0 40px;
-    justify-content: space-between;
+ .header_container {
+    padding: 0 40px;  
+    font-size: 20px;  
+  }
+  .header_container input, .header_container label {
+    display: none;
   }
   .header--menu {
     display: none;
   }
   .header--logo {
     position: static;
+    justify-content: left;
+    margin: 0 30px;
   }
-  .header--lista-navegacion {
-    display: flex;     
-    width: 400px; 
+  .header--lupa {
+    margin: 0 30px;
+  }
+  .header--lista-navegacion {    
+    display: flex;        
+    width: max-content; 
+    margin: 0 30px;
   }
   .header--lista-navegacion ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: static;
+    height: 100px;
   }  
   .header--lista-navegacion ul li {
+    display: flex;
     margin: 0 20px;
     width: max-content;
+    height: 80px;
+    align-items: center;       
+  }
+  .header--lista-navegacion ul li a {
+    height: max-content;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+  }
+  /****************************section productos*********************/
+  .inicio_productos p {
+    font-size: 50px;
+    margin: 30px auto;
+  }
+  /****************************section descripcion*********************/
+  .section .titulo {
+    font-size: 50px;
+  }
+  .section .parrafo {
+    font-size: 30px;
+  }  
+  .texto-final-parrafo {
+    margin: 100px auto;
+  }
+  .footer_container {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    contain: 1000px;
   }
 }
 /****************************CONOCENOS CONTAINER*********************/
@@ -222,6 +292,7 @@ body{
 }
 .section{
   padding: 20px;
+  max-width: 1000px;
 }
 /****************************section bienvenida*********************/
 .bienvenida {
