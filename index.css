@@ -80,35 +80,77 @@ body{
     }
   }
 /********************************slider animation********************/
-  .slider {
-    width: 100vw;
-    height: auto;
-    margin: auto;
-    overflow: hidden;    
-  }
-  .slider .slider-track {
-    display: flex;
-    animation: scroll 60s linear infinite;
-    width: calc(2000px * 12); 
-  }
-  .slider .slide {
-    width: 100vw;
-    max-width: 1000px;
-    height: 100%;
-    margin: 10px;
-  }
-  .slider .slide img {
-    width: 100%;
-    height: 100%;   
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);      
-    }  
-    100% {
-      transform: translateX(calc(-100vw * 6));      
-    }
-  }
+.slider-container--inicio {  
+  width: 100%;  
+  height: auto;
+  margin: 0;  
+  padding: 0;
+  animation: slider-inicio 10s infinite ease-in-out; 
+}
+.slider-container--inicio .slider-track {
+  display: flex;
+  width: 400%;
+}
+.slider-container--inicio li {
+  width: 100%; 
+  margin: 0 auto;
+}
+.slider-container--inicio .slider-track img {
+  width: 100%;  
+  height: 100%;
+}
+@keyframes slider-inicio {
+  0%{margin-left: 0%;}
+  20%{margin-left: 0%;}
+
+  25%{margin-left: 100%;}
+  45%{margin-left: 100%;}
+
+  50%{margin-left: 200%;}
+  70%{margin-left: 200%;}
+
+  75%{margin-left: 300%;}
+  95%{margin-left: 300%;}  
+}
+/*******************slider animation productos**********************/
+.slider-container--productos {  
+  width: 100%;  
+  height: auto;
+  margin: 0;  
+  padding: 0;
+  animation: slider-productos 24s infinite ease-in-out; 
+}
+.slider-container--productos .slider-track {
+  display: flex;
+  width: 600%;
+}
+.slider-container--productos li {  
+  width: 100%; 
+  margin: 0 auto;
+}
+.slider-container--productos .slider-track img {
+  width: 100%;  
+  height: 100%;
+}
+@keyframes slider-productos {
+  0%{margin-left: 0%;}
+  10%{margin-left: 0%;}
+
+  17%{margin-left: -100%;}
+  27%{margin-left: -100%;}
+
+  34%{margin-left: -200%;}
+  44%{margin-left: -200%;}
+
+  51%{margin-left: -300%;}
+  61%{margin-left: -300%;}
+
+  68%{margin-left: -400%;}
+  78%{margin-left: -400%;}
+
+  85%{margin-left: -500%;}
+  95%{margin-left: -500%;}
+}
 /***********************************PAGINA INICIO - VISTA MOBILE******************************/
 /**********************************header****************************/
 .header_container {
@@ -226,7 +268,7 @@ body{
 .slider-container {
   display: flex;
   width: 100%;
-  max-width: 1000px; 
+  max-width: 960px; 
   margin: 0 auto;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
@@ -387,7 +429,6 @@ body{
   height: 24px;
 }
 .section{
-  padding: 20px;
   max-width: 1000px;
   overflow: hidden;
 }
