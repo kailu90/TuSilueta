@@ -293,7 +293,7 @@ body{
   margin: 60px auto;
   background-color: var(--white);
   border-radius: 10px;
-  border: 1px transparent var(--gris_opacity);
+  border: 1px solid transparent;
 }
 .inicio_productos button:hover {  
   border: 1px solid var(--gris_opacity);
