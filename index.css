@@ -162,7 +162,7 @@ body{
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  padding: 0 20px;
   border-bottom: 0.5px solid var(--gris_opacity);
   z-index: 1;  
 }
@@ -235,6 +235,9 @@ body{
 .redes_container a img {
   width: 28px;
   height: 28px; 
+}
+.redes_container a:hover {
+  margin-right: 20px;
 }
 .titulo {
   font-size: 30px;  
