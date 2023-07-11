@@ -162,7 +162,7 @@ body{
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0;
   border-bottom: 0.5px solid var(--gris_opacity);
   z-index: 1;  
 }
@@ -280,6 +280,9 @@ body{
   scroll-snap-align: center;  
 }
 /*********************************section inicio productos***************************/
+.contain_container .inicio_productos {
+  padding: 0;
+}
 .inicio_productos p {
   font-size: 30px;
   margin: 30px auto;
@@ -331,8 +334,7 @@ body{
   }
 /***********************************header******************************/
  .header_container {
-    display: flex;
-    padding: 0 40px;  
+    display: flex;    
     justify-self: center;
     font-size: 20px;    
     max-width: 1000px;     
@@ -431,6 +433,7 @@ body{
 .section{
   max-width: 1000px;
   overflow: hidden;
+  padding: 0 20px;
 }
 /****************************section bienvenida*********************/
 .bienvenida {
