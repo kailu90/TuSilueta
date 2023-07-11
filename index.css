@@ -85,7 +85,7 @@ body{
   height: auto;
   margin: 0;  
   padding: 0;
-  animation: slider-inicio 10s infinite ease-in-out; 
+  animation: slider-inicio 20s infinite ease-in-out; 
 }
 .slider-container--inicio .slider-track {
   display: flex;
@@ -100,17 +100,17 @@ body{
   height: 100%;
 }
 @keyframes slider-inicio {
-  0%{margin-left: 0%;}
-  20%{margin-left: 0%;}
+  0%{margin-right: 0%;}
+  20%{margin-right: 0%;}
 
-  25%{margin-left: 100%;}
-  45%{margin-left: 100%;}
+  25%{margin-right: -100%;}
+  45%{margin-right: -100%;}
 
-  50%{margin-left: 200%;}
-  70%{margin-left: 200%;}
+  50%{margin-right: -200%;}
+  70%{margin-right: -200%;}
 
-  75%{margin-left: 300%;}
-  95%{margin-left: 300%;}  
+  75%{margin-right: -300%;}
+  95%{margin-right: -300%;}  
 }
 /*******************slider animation productos**********************/
 .slider-container--productos {  
@@ -284,12 +284,24 @@ body{
 }
 /*********************************section inicio productos***************************/
 .contain_container .inicio_productos {
-  padding: 0;
+  padding: 0;  
 }
-.inicio_productos p {
+.inicio_productos button {
+  width: max-content;
+  padding: 10px 20px;  
   font-size: 30px;
-  margin: 30px auto;
+  margin: 60px auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  border: 1px transparent var(--gris_opacity);
 }
+.inicio_productos button:hover {  
+  border: 1px solid var(--gris_opacity);
+  color: var(--gris_opacity);
+ } 
+ .inicio_productos button a:hover {
+  color: var(--gris_opacity);
+ }
 .inicio_productos img { 
   display: flex;
   width: 100%;
@@ -298,10 +310,16 @@ body{
   align-self: center;
 }
 /*********************************section inicio descripcion*****************************/
+.inicio_descripcion {
+  margin-top: 60px;
+}
+/*********************************section inicio diferencia*****************************/
+.inicio_diferencia {
+  margin-top: 60px;
+}
 .inicio_diferencia p:nth-child(2){
   margin: 30px auto;
 }
-/*********************************section inicio diferencia*****************************/
 .texto-final-parrafo {
   text-align: center;
   font-weight: 600;
