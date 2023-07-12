@@ -85,7 +85,7 @@ body{
   height: auto;
   margin: 0;  
   padding: 0;
-  animation: slider-inicio 20s infinite ease-in-out; 
+  animation: slider-inicio 6s infinite ease-in-out; 
 }
 .slider-container--inicio .slider-track {
   display: flex;
@@ -102,10 +102,10 @@ body{
 }
 @keyframes slider-inicio {
   0%{margin-left: 0%;}
-  40%{margin-left: 0%;}
+  45%{margin-left: 0%;} 
   
-  45%{margin-left: -200%;}
-  95%{margin-left: -200%;}  
+  55%{margin-left: -200%;}
+  95%{margin-left: -200%;}   
 }
 /*******************slider animation productos**********************/
 .slider-container--productos {  
