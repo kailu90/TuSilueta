@@ -147,6 +147,11 @@ body{
   95%{margin-left: -500%;}
 }
 /***********************************PAGINA INICIO - VISTA MOBILE******************************/
+.section{
+  max-width: 1000px;
+  overflow: hidden;
+  padding: 0 20px;
+}
 /**********************************header****************************/
 .header_container {
   display: flex;
@@ -432,93 +437,3 @@ body{
   }
 }
 /***********************************PAGINA PRODUCTOS - VISTA MOBILE******************************/
-
-
-/****************************PAGINA - CONOCENOS VISTA MOBILE************************/
-/********************************CONTAINER*********************/
-.conocenos-container{
-  z-index: 0;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  width: 100vw;
-  height: max-content;
-}
-.conocenos-container h2 {
-  font-size: 30px;
-}
-.conocenos-container p {
-  font-size: 18px;
-}
-.flecha-atras {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  width: 44px;
-  height: 44px;
-  font-size: 8px;
-}
-.flecha-atras img{
-  width: 34px;
-  height: 24px;
-}
-.section{
-  max-width: 1000px;
-  overflow: hidden;
-  padding: 0 20px;
-}
-/****************************section bienvenida*********************/
-.bienvenida {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  width: 100vw;
-  height: auto;  
-}
-.bienvenida h1 {
-  font-size: 30px;
-}
-/****************************section nosotros*********************/
-.nosotros {
-  width: 100vw;
-  height: 100vh;  
-  align-content: center;
-}
-.nosotros h2 {
-  margin-bottom: 20px;
-}
-.nosotros p {
-  margin-bottom: 20px;
-}
-/****************************section botones info*********************/
-.botones-info {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--gris_opacity);
-  height: 50vh;
-}
-.botones-info h2{
-  margin-bottom: 20px;
-}
-.botones-container {
-  display: flex;
-  flex-direction: column;
-}
-.botones-container button {
-  width: 120px;
-  height: 30px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  align-self: center;
-}
-/****************************section legado*********************/
-.legado h2 {
-  margin-bottom: 30px;
-}
-.contain--legado {
-  display: flex; 
-  flex-direction: column; 
-}
