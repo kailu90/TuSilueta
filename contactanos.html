@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="./images/logo_corto.png">
   <title>Tu silueta | Contáctanos</title>
 </head>
 <body>
+  <section class="loader" >    
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
   <header class="header_container">
-    <input type="checkbox" id="check">
-    <label for="check" class="check-ok"><img class="header--menu" src="./assets/menu.png" alt="menu tipo hamburguesa"></label>
-    <a href="#" class="enlace"></a>
+    <div class="checkbox--container" >
+      <input type="checkbox" id="check">
+      <label for="check" class="check-ok"><img class="header--menu" src="./assets/menu.png" alt="menu tipo hamburguesa"></label>
+      <a href="#" class="enlace"></a>
+    </div>   
     <img class="header--logo" src="./images/logo_horizontal.png" alt="logo empresa">
     <nav class="header--lista-navegacion" >
       <ul>
         <li class="header--inicio">
           <a href="./index.html">Inicio</a></li>
         <li class="header--productos">
-          <a href="./tienda.html">Nuestros Productos</a>          
+          <a href="./tienda.html">Nuestros Productos</a>         
         </li>
         <li class="header--farmasi">
           <a href="./drctuna.html">Dr. C. Tuna-Farmasi</a></li>     
@@ -25,8 +36,18 @@
           <a href="./contactanos.html">Contáctanos</a></li>  
       </ul>
     </nav>
-    <img class="header--lupa"src="./assets/lupa.png" alt="lupa de búsqueda">
+    <div class="header--barra-busqueda">
+      <input class="input-lupa" type="search">
+      <label class="label-busqueda" for="input--lupa"><img src="./assets/lupa.png" alt="label barra busqueda"></label>
+    </div>
   </header>
+  <main class="contactanos_container">
+    <p>Para mayor información</p>
+    <button><a href="https://web.whatsapp.com/">whatsapp</a></button>
+    <p>Horarios de atención</p>
+    <p>Lunes - Viernes 8:00 am / 8:00 pm</p>
+    <p>Sábado 8:00 am / 5:00 pm</p>
+  </main>
   <footer class="footer_container">
     <img src="./images/logo.png" alt="logo de tu silueta">
     <nav class="footer--lista-navegacion"  >

@@ -17,10 +17,14 @@
     <div></div>
   </section>
   <header class="header_container">
-    <input type="checkbox" id="check">
-    <label for="check" class="check-ok"><img class="header--menu" src="./assets/menu.png" alt="menu tipo hamburguesa"></label>
-    <a href="#" class="enlace"></a>
-    <img class="header--logo" src="./images/logo_horizontal.png" alt="logo empresa">
+    <div class="checkbox--container" >
+      <input type="checkbox" id="check">
+      <label for="check" class="check-ok"><img class="header--menu" src="./assets/menu.png" alt="menu tipo hamburguesa"></label>
+      <a href="#" class="enlace"></a>
+    </div>  
+    <div class="header--logo-container">
+      <img class="header--logo" src="./images/logo_horizontal.png" alt="logo empresa">
+    </div>     
     <nav class="header--lista-navegacion" >
       <ul>
         <li class="header--inicio">
@@ -34,7 +38,10 @@
           <a href="./contactanos.html">Contáctanos</a></li>  
       </ul>
     </nav>
-    <img class="header--lupa" src="./assets/lupa.png" alt="lupa de búsqueda">
+    <div class="header--barra-busqueda">
+      <input class="input-lupa" type="search">
+      <label class="label-busqueda" for="input--lupa"><img src="./assets/lupa.png" alt="label barra busqueda"></label>
+    </div>
   </header>
   <main class="contain_container">   
     <div class="redes_container">

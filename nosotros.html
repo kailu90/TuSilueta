@@ -7,10 +7,17 @@
   <title>Tu silueta | Nosotros</title>
 </head>
 <body>
+  <section class="loader" >    
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
   <header class="header_container">
-    <input type="checkbox" id="check">
-    <label for="check" class="check-ok"><img class="header--menu" src="./assets/menu.png" alt="menu tipo hamburguesa"></label>
-    <a href="#" class="enlace"></a>
+    <div class="checkbox--container" >
+      <input type="checkbox" id="check">
+      <label for="check" class="check-ok"><img class="header--menu" src="./assets/menu.png" alt="menu tipo hamburguesa"></label>
+      <a href="#" class="enlace"></a>
+    </div>   
     <img class="header--logo" src="./images/logo_horizontal.png" alt="logo empresa">
     <nav class="header--lista-navegacion" >
       <ul>
@@ -25,8 +32,11 @@
           <a href="./contactanos.html">Contáctanos</a></li>  
       </ul>
     </nav>
-    <img class="header--lupa" src="./assets/lupa.png" alt="lupa de búsqueda">
-  </header>
+    <div class="header--barra-busqueda">
+      <input class="input-lupa" type="search">
+      <label class="label-busqueda" for="input--lupa"><img src="./assets/lupa.png" alt="label barra busqueda"></label>
+    </div>
+  </header>  
   <footer class="footer_container">
     <img src="./images/logo.png" alt="logo de tu silueta">
     <nav class="footer--lista-navegacion"  >
